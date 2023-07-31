@@ -25,8 +25,7 @@ class MainActivity : AppCompatActivity() {
         SendData.setOnClickListener {
             startActivity(Intent(this,MainActivity2::class.java)
                 .putExtra("Username", userName.text.toString())
-                .putExtra("UserPassword", userpassword.text.toString())
-            )
+                .putExtra("UserPassword", userpassword.text.toString()))
 
 
             Toast.makeText(this,"NEXT",Toast.LENGTH_SHORT).show()
